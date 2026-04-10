@@ -29,6 +29,7 @@ async fn main() -> eyre::Result<()> {
         Command::InitiateBatchTransfer(command) => command.execute().await,
         Command::InitiateProgramUpgrade(command) => command.execute().await,
         Command::DisplayVault(command) => command.execute().await,
+        Command::DisplayTransaction(command) => command.execute().await,
         Command::DisplayProposals(command) => command.execute().await,
     }
 }

@@ -1,6 +1,7 @@
 use crate::command::config_transaction_create::ConfigTransactionCreate;
 use crate::command::config_transaction_execute::ConfigTransactionExecute;
 use crate::command::display_proposals::DisplayProposals;
+use crate::command::display_transaction::DisplayTransaction;
 use crate::command::display_vault::DisplayVault;
 use crate::command::initiate_program_upgrade::InitiateProgramUpgrade;
 use crate::command::initiate_batch_transfer::InitiateBatchTransfer;
@@ -18,6 +19,7 @@ use clap::Subcommand;
 pub mod config_transaction_create;
 pub mod config_transaction_execute;
 pub mod display_proposals;
+pub mod display_transaction;
 pub mod display_vault;
 pub mod initiate_batch_transfer;
 pub mod initiate_program_upgrade;
@@ -46,5 +48,6 @@ pub enum Command {
     InitiateBatchTransfer(InitiateBatchTransfer),
     InitiateProgramUpgrade(InitiateProgramUpgrade),
     DisplayVault(DisplayVault),
+    DisplayTransaction(DisplayTransaction),
     DisplayProposals(DisplayProposals),
 }
